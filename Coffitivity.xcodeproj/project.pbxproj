@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91001F5416EF08C800CAFBEF /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91001F5316EF08C800CAFBEF /* MacRuby.framework */; };
 		9138019816EEEA7800A641D5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9138019716EEEA7800A641D5 /* Cocoa.framework */; };
-		9138019A16EEEA7800A641D5 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9138019916EEEA7800A641D5 /* MacRuby.framework */; };
 		913801A316EEEA7800A641D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 913801A116EEEA7800A641D5 /* InfoPlist.strings */; };
 		913801A516EEEA7800A641D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 913801A416EEEA7800A641D5 /* main.m */; };
 		913801AA16EEEA7900A641D5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913801A816EEEA7900A641D5 /* MainMenu.xib */; };
@@ -27,9 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		91001F5316EF08C800CAFBEF /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = ../../../../Library/Frameworks/MacRuby.framework; sourceTree = "<group>"; };
 		9138019416EEEA7800A641D5 /* Coffitivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coffitivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9138019716EEEA7800A641D5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		9138019916EEEA7800A641D5 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
 		913801A016EEEA7800A641D5 /* Coffitivity-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Coffitivity-Info.plist"; sourceTree = "<group>"; };
 		913801A216EEEA7800A641D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		913801A416EEEA7800A641D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,8 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91001F5416EF08C800CAFBEF /* MacRuby.framework in Frameworks */,
 				9138019816EEEA7800A641D5 /* Cocoa.framework in Frameworks */,
-				9138019A16EEEA7800A641D5 /* MacRuby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +55,7 @@
 		9138018B16EEEA7800A641D5 = {
 			isa = PBXGroup;
 			children = (
+				91001F5316EF08C800CAFBEF /* MacRuby.framework */,
 				9138019E16EEEA7800A641D5 /* Coffitivity */,
 				9138019616EEEA7800A641D5 /* Frameworks */,
 				9138019516EEEA7800A641D5 /* Products */,
@@ -73,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				9138019716EEEA7800A641D5 /* Cocoa.framework */,
-				9138019916EEEA7800A641D5 /* MacRuby.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -294,9 +294,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					/Library/Frameworks,
+					"\"$(SRCROOT)\"",
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -311,9 +314,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = x86_64;
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					/Library/Frameworks,
+					"\"$(SRCROOT)\"",
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -327,12 +333,14 @@
 		913801B616EEEA7900A641D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = Debug;
 		};
 		913801B716EEEA7900A641D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = Release;
 		};
@@ -355,6 +363,7 @@
 				913801B416EEEA7900A641D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		913801B516EEEA7900A641D5 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -363,6 +372,7 @@
 				913801B716EEEA7900A641D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
