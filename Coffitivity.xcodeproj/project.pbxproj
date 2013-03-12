@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9138019816EEEA7800A641D5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9138019716EEEA7800A641D5 /* Cocoa.framework */; };
+		9138019A16EEEA7800A641D5 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9138019916EEEA7800A641D5 /* MacRuby.framework */; };
+		913801A316EEEA7800A641D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 913801A116EEEA7800A641D5 /* InfoPlist.strings */; };
+		913801A516EEEA7800A641D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 913801A416EEEA7800A641D5 /* main.m */; };
+		913801AA16EEEA7900A641D5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913801A816EEEA7900A641D5 /* MainMenu.xib */; };
+		913801AD16EEEA7900A641D5 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 913801AC16EEEA7900A641D5 /* rb_main.rb */; };
+		913801AF16EEEA7900A641D5 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 913801AE16EEEA7900A641D5 /* AppDelegate.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9138019C16EEEA7800A641D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9138018C16EEEA7800A641D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9138019316EEEA7800A641D5;
+			remoteInfo = Coffitivity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9138019416EEEA7800A641D5 /* Coffitivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coffitivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9138019716EEEA7800A641D5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9138019916EEEA7800A641D5 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
+		913801A016EEEA7800A641D5 /* Coffitivity-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Coffitivity-Info.plist"; sourceTree = "<group>"; };
+		913801A216EEEA7800A641D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		913801A416EEEA7800A641D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		913801A616EEEA7800A641D5 /* Coffitivity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Coffitivity-Prefix.pch"; sourceTree = "<group>"; };
+		913801A916EEEA7900A641D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		913801AC16EEEA7900A641D5 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		913801AE16EEEA7900A641D5 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9138019116EEEA7800A641D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9138019816EEEA7800A641D5 /* Cocoa.framework in Frameworks */,
+				9138019A16EEEA7800A641D5 /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9138018B16EEEA7800A641D5 = {
+			isa = PBXGroup;
+			children = (
+				9138019E16EEEA7800A641D5 /* Coffitivity */,
+				9138019616EEEA7800A641D5 /* Frameworks */,
+				9138019516EEEA7800A641D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9138019516EEEA7800A641D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9138019416EEEA7800A641D5 /* Coffitivity.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9138019616EEEA7800A641D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9138019716EEEA7800A641D5 /* Cocoa.framework */,
+				9138019916EEEA7800A641D5 /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9138019E16EEEA7800A641D5 /* Coffitivity */ = {
+			isa = PBXGroup;
+			children = (
+				913801AE16EEEA7900A641D5 /* AppDelegate.rb */,
+				913801A716EEEA7900A641D5 /* Resources */,
+				913801AB16EEEA7900A641D5 /* Other Sources */,
+				9138019F16EEEA7800A641D5 /* Supporting Files */,
+			);
+			path = Coffitivity;
+			sourceTree = "<group>";
+		};
+		9138019F16EEEA7800A641D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				913801A016EEEA7800A641D5 /* Coffitivity-Info.plist */,
+				913801A116EEEA7800A641D5 /* InfoPlist.strings */,
+				913801A416EEEA7800A641D5 /* main.m */,
+				913801A616EEEA7800A641D5 /* Coffitivity-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		913801A716EEEA7900A641D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				913801A816EEEA7900A641D5 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		913801AB16EEEA7900A641D5 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				913801AC16EEEA7900A641D5 /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		9138019B16EEEA7800A641D5 /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = 913801B516EEEA7900A641D5 /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+				9138019D16EEEA7800A641D5 /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		9138019316EEEA7800A641D5 /* Coffitivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 913801B216EEEA7900A641D5 /* Build configuration list for PBXNativeTarget "Coffitivity" */;
+			buildPhases = (
+				9138019016EEEA7800A641D5 /* Sources */,
+				9138019116EEEA7800A641D5 /* Frameworks */,
+				9138019216EEEA7800A641D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Coffitivity;
+			productName = Coffitivity;
+			productReference = 9138019416EEEA7800A641D5 /* Coffitivity.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9138018C16EEEA7800A641D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Mick Staugaard";
+			};
+			buildConfigurationList = 9138018F16EEEA7800A641D5 /* Build configuration list for PBXProject "Coffitivity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9138018B16EEEA7800A641D5;
+			productRefGroup = 9138019516EEEA7800A641D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9138019316EEEA7800A641D5 /* Coffitivity */,
+				9138019B16EEEA7800A641D5 /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9138019216EEEA7800A641D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				913801A316EEEA7800A641D5 /* InfoPlist.strings in Resources */,
+				913801AA16EEEA7900A641D5 /* MainMenu.xib in Resources */,
+				913801AD16EEEA7900A641D5 /* rb_main.rb in Resources */,
+				913801AF16EEEA7900A641D5 /* AppDelegate.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9138019016EEEA7800A641D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				913801A516EEEA7800A641D5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9138019D16EEEA7800A641D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9138019316EEEA7800A641D5 /* Coffitivity */;
+			targetProxy = 9138019C16EEEA7800A641D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		913801A116EEEA7800A641D5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				913801A216EEEA7800A641D5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		913801A816EEEA7900A641D5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				913801A916EEEA7900A641D5 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		913801B016EEEA7900A641D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		913801B116EEEA7900A641D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		913801B316EEEA7900A641D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Coffitivity/Coffitivity-Prefix.pch";
+				INFOPLIST_FILE = "Coffitivity/Coffitivity-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		913801B416EEEA7900A641D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Coffitivity/Coffitivity-Prefix.pch";
+				INFOPLIST_FILE = "Coffitivity/Coffitivity-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		913801B616EEEA7900A641D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		913801B716EEEA7900A641D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9138018F16EEEA7800A641D5 /* Build configuration list for PBXProject "Coffitivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				913801B016EEEA7900A641D5 /* Debug */,
+				913801B116EEEA7900A641D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		913801B216EEEA7900A641D5 /* Build configuration list for PBXNativeTarget "Coffitivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				913801B316EEEA7900A641D5 /* Debug */,
+				913801B416EEEA7900A641D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		913801B516EEEA7900A641D5 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				913801B616EEEA7900A641D5 /* Debug */,
+				913801B716EEEA7900A641D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9138018C16EEEA7800A641D5 /* Project object */;
+}
